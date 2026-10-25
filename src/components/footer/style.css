@@ -1,0 +1,126 @@
+/* =========================
+   🌙 FOOTER (MATCHED WITH SYSTEM)
+========================= */
+.footer {
+  background: #0f172a; /* deep modern dark */
+  color: #fff;
+  padding: 60px 0 30px;
+}
+
+/* =========================
+   📝 TEXT
+========================= */
+.footer-text {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   🔗 LINKS
+========================= */
+.footer-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary); /* #087EA4 */
+  transform: translateX(4px);
+}
+
+/* =========================
+   📏 DIVIDER
+========================= */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.08);
+  margin: 30px 0;
+}
+
+/* =========================
+   🌐 SOCIAL ICONS
+========================= */
+.social-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  margin-right: 12px;
+
+  transition: all 0.25s ease;
+}
+
+.social-link:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   🎯 ACCENT TEXT
+========================= */
+.text-accent {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* =========================
+   🔘 BUTTONS (FOOTER)
+========================= */
+.btn-accent {
+  background: linear-gradient(135deg, var(--primary), #0aa2c0);
+  color: #fff;
+  border: none;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  transition: all 0.25s ease;
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  transform: translateY(-2px);
+}
+
+/* OUTLINE BUTTON */
+.btn-outline-accent {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 8px;
+  padding: 8px 16px;
+
+  background: transparent;
+}
+
+.btn-outline-accent:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* =========================
+   🔗 NAV LINKS (IF USED)
+========================= */
+.nav-link-custom {
+  color: var(--nav-color);
+  transition: 0.25s;
+}
+
+.nav-link-custom:hover {
+  color: var(--nav-hover);
+}
+
+/* =========================
+   📱 RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .social-link {
+    margin: 0 8px;
+  }
+}

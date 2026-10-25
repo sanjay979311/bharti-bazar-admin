@@ -1,0 +1,37 @@
+/* Custom Confirm Modal Styling */
+.custom-confirm-modal .modal-content {
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background-color: var(--white);
+}
+
+.custom-confirm-modal .modal-header {
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.custom-confirm-modal .modal-title {
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.custom-confirm-modal .modal-body {
+  color: var(--text-muted);
+  padding: 0 1.5rem 1.5rem;
+}
+
+.custom-confirm-modal .btn-light {
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.custom-confirm-modal .btn-danger {
+  background: #ef4444; /* Modern soft red */
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.2);
+}
+
+.custom-confirm-modal .btn-danger:hover {
+  background: #dc2626;
+}

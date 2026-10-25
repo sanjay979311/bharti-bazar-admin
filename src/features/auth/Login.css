@@ -1,0 +1,119 @@
+/* Login.css */
+
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-light);
+  /* Optional: adds a subtle professional touch to the background */
+  background-image: radial-gradient(circle at 2px 2px, var(--border-color) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px; /* Constrains the width */
+  margin: 20px; /* Ensures it doesn't touch screen edges on mobile */
+  background-color: var(--white);
+  padding: 48px 40px;
+  border-radius: 16px;
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+    0 20px 25px -5px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Accent bar at the top of the card for a premium look */
+.login-card::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent-blue);
+  margin: -48px auto 32px;
+  border-radius: 0 0 4px 4px;
+}
+
+.login-title {
+  color: var(--text-main);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.login-input {
+  width: 100%;
+  box-sizing: border-box; /* Crucial for preventing width overflow */
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  font-size: 16px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--white);
+  color: var(--text-main);
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 4px var(--input-focus-shadow);
+  transform: translateY(-1px);
+}
+
+.login-button {
+  margin-top: 8px;
+  padding: 14px;
+  background-color: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.login-button:hover {
+  background-color: var(--accent-hover);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.3);
+  transform: translateY(-1px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}

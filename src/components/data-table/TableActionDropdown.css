@@ -1,0 +1,70 @@
+.action-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.action-dot-btn {
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-dot-btn:hover, .action-dot-btn.active {
+  background-color: #e0e0e0;
+}
+
+/* The Portal Menu styling */
+.custom-dropdown-menu {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #edf2f7;
+  padding: 8px 0;
+  min-width: 180px;
+  animation: fadeIn 0.15s ease-out;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  width: 100%;
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-link:hover {
+  background-color: #f7fafc;
+}
+
+.icon-box {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.delete-btn {
+  color: #e53e3e;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background-color: #edf2f7;
+  margin: 4px 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
